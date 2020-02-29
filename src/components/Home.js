@@ -18,7 +18,7 @@ export default function Home() {
 		<div id='quote-box' className='container'>
 			<h1 className='title'>Random Quote Machine</h1>
 			<div className='card'>
-				<img src={img} alt='random image' className='card--img' />
+				<img src={img} alt='random' className='card--img' />
 				{quotes !== '' && loading === true ? (
 					<Spinner />
 				) : (
@@ -41,7 +41,7 @@ export default function Home() {
 						href={`https://twitter.com/intent/tweet?text=${quotes}`}
 						id='tweet-quote'
 						className='card--button btn-twitter'>
-						<i class='fab fa-twitter' aria-hidden='true'></i> Tweet Quote
+						<i className='fab fa-twitter' aria-hidden='true'></i> Tweet Quote
 					</a>
 				</div>
 			</div>
